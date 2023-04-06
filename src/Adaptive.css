@@ -1,0 +1,80 @@
+@media (max-aspect-ratio: 16/10) {
+    .landing .slide .background {
+       width: auto;
+       height: 120%;
+    }
+}
+@media (orientation: portrait) {
+    .artists, .products {
+        width: 100%;
+        justify-content: left;
+    }
+    .landing .slide {
+        min-height: calc(100% - 50px);
+    }
+    .landing .slide.full {
+        min-height: 100%;
+    }
+    .landing h2 {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .landing .nav-link {
+        display: none;
+    }
+    .artists, .products {
+        padding-bottom: 10px;
+    }
+    .artists .artist .poster-wrapper, .products .product .image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 800px) and (min-height: 800px) {
+    .artists .artist .poster-wrapper, .products .product .image-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (orientation: portrait) and (min-width: 1000px) {
+    .artists .artist .poster-wrapper, .products .product .image-wrapper {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (orientation: landscape) and (max-height: 420px) {
+    html {
+        zoom: 0.7;
+    }
+}
+@media screen and (orientation: landscape) and (max-height: 320px) {
+    html {
+        zoom: 0.6;
+    }
+}
+@media screen and (orientation: landscape) and (max-height: 540px) {
+    html {
+        zoom: 0.8;
+    }
+}
+@media screen and (max-width: 300px) {
+    .landing h2 {
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    html {
+        zoom: 1.4;
+    }
+}
+@media screen and (min-width: 2048px) {
+    html {
+        zoom: 1.7;
+    }
+}
+@media screen and (min-width: 3840px) {
+    html {
+        zoom: 3;
+    }
+}
