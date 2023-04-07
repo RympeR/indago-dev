@@ -9,10 +9,10 @@ $chatId = '-1001749067057';
 
 
 // POST data
-$fullName = $_GET['name'] ?? null;
-$subject = $_GET['subject'] ?? null;
-$email = $_GET['email'] ?? null;
-$message = $_GET['message'] ?? null;
+$fullName = $_POST['name'] ?? null;
+$subject = $_POST['subject'] ?? null;
+$email = $_POST['email'] ?? null;
+$message = $_POST['message'] ?? null;
 
 // Prepared message for Telegram
 $preparedMessage = urlencode(
