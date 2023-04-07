@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dad5ccaf.css",
+    "main.js": "/static/js/main.c938b488.js",
+    "static/js/787.58e47e26.chunk.js": "/static/js/787.58e47e26.chunk.js",
+    "static/media/landing-bg-3564.jpg": "/static/media/landing-bg-3564.1410a3311766346b20d4.jpg",
+    "static/media/landing-bg-2560.jpg": "/static/media/landing-bg-2560.1a062aa8781d55620c5a.jpg",
+    "static/media/landing-bg-1920.jpg": "/static/media/landing-bg-1920.03a4bf1177327be0cc97.jpg",
+    "static/media/landing-bg-1366.jpg": "/static/media/landing-bg-1366.2a8a44401e03316b4f9c.jpg",
+    "static/media/2.svg": "/static/media/2.eabe1d117fbb84be97a5326e37fe9b36.svg",
+    "static/media/1.svg": "/static/media/1.cd2cfe7155f4dc8f5f86953e8ad83499.svg",
+    "static/media/3.svg": "/static/media/3.bcef9aae2c7e04cf3e148f3c5f2d9840.svg",
+    "static/media/4.svg": "/static/media/4.b2f2c742e992c9d920b896cc38808ca0.svg",
+    "static/media/landing-bg-720.jpg": "/static/media/landing-bg-720.d5ee9da67fc74aef01f4.jpg",
+    "static/media/kidsofthefuture.svg": "/static/media/kidsofthefuture.c18bed3dbcf8150b97afcc2be0248295.svg",
+    "static/media/landing-bg-480.jpg": "/static/media/landing-bg-480.882a8c85b245c6a04900.jpg",
+    "static/media/indago-logo-web.svg": "/static/media/indago-logo-web.51d9786c090ea0f535ac9d5063503cbf.svg",
+    "index.html": "/index.html",
+    "static/media/telegram.svg": "/static/media/telegram.dd2e328585b140565234cade962271e7.svg",
+    "static/media/product.svg": "/static/media/product.f90e30252fd0b5acb068.svg",
+    "static/media/arrow-down.svg": "/static/media/arrow-down.af1ba902228e8782723fbbeb84575349.svg",
+    "main.dad5ccaf.css.map": "/static/css/main.dad5ccaf.css.map",
+    "main.c938b488.js.map": "/static/js/main.c938b488.js.map",
+    "787.58e47e26.chunk.js.map": "/static/js/787.58e47e26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dad5ccaf.css",
+    "static/js/main.c938b488.js"
+  ]
+}
