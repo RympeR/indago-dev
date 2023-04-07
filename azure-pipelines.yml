@@ -35,5 +35,5 @@ steps:
     sshEndpoint: 'IndagoSSH'
     sourceFolder: 'drop'
     contents: '**'
-    targetFolder: '/'
+    targetFolder: '/var/www'
     readyTimeout: '20000'
