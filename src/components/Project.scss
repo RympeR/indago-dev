@@ -1,0 +1,70 @@
+.project-wrapper {
+    text-decoration: inherit;
+    color: inherit;
+
+    .project {
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 3px solid transparent;
+        border-color: rgba(255, 255, 255, 0.05);
+        transition: border-color 0.2s ease;
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.116);
+        }
+
+        .poster-wrapper {
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.05);
+            background-image: url(../assets/product.svg);
+            background-repeat: no-repeat;
+            background-size: 64px;
+            background-position: center;
+            box-shadow: 0 8px 24px rgb(0 0 0 / 4%);
+
+            .poster {
+                width: 100%;
+            }
+
+            .listen-button {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                width: 48px;
+                border-radius: 100%;
+                backdrop-filter: blur(30px);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            &:hover {
+                .listen-button {
+                    opacity: 1;
+                }
+            }
+
+            &,
+            .poster {
+                transition: all 0.3s ease;
+            }
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+    }
+}

@@ -5,7 +5,7 @@
     }
 }
 @media (orientation: portrait) {
-    .artists, .products {
+    .projects, .products {
         width: 100%;
         justify-content: left;
     }
@@ -23,22 +23,22 @@
     .landing .nav-link {
         display: none;
     }
-    .artists, .products {
+    .projects, .products {
         padding-bottom: 10px;
     }
-    .artists .artist .poster-wrapper, .products .product .image-wrapper {
+    .projects .project .poster-wrapper, .products .product .image-wrapper {
         width: 200px;
         height: 200px;
     }
 }
 @media screen and (max-width: 800px) and (min-height: 800px) {
-    .artists .artist .poster-wrapper, .products .product .image-wrapper {
+    .projects .project .poster-wrapper, .products .product .image-wrapper {
         width: 250px;
         height: 250px;
     }
 }
 @media screen and (orientation: portrait) and (min-width: 1000px) {
-    .artists .artist .poster-wrapper, .products .product .image-wrapper {
+    .projects .project .poster-wrapper, .products .product .image-wrapper {
         width: 400px;
         height: 400px;
     }
