@@ -1,3 +1,54 @@
+:root {
+  --ui-accent: #4900be;
+  --ui-error: hsl(350, 100%, 58%);
+  --ui-info: hsl(216, 100%, 58%);
+  --ui-success: #07bc0c;
+  --ui-alert: #f1c40f;
+
+  --ui-light: hsl(220, 60%, 2%);
+  --ui-dark: white;
+
+  --ui-text: var(--ui-dark);
+  --ui-text-invert: var(--ui-light);
+
+  --ui-background-high: hsl(215, 0%, 11%);
+  --ui-background-mid-high: hsl(215, 0%, 14%);
+  --ui-background-mid: hsl(212, 0%, 16%);
+  --ui-background-low: hsl(214, 0%, 18%);
+
+  --ui-background-body: #0d1117;
+  --ui-background-input: var(--ui-background-high);
+  --ui-background-document-preview: var(--ui-background-body);
+
+  --ui-window-header: var(--ui-background-mid-high);
+  --ui-modal-border: var(--ui-input-border);
+  --ui-modal-overlay: var(--ui-overlay-light-max);
+  --ui-scrollbar: var(--ui-background-high);
+  --ui-scrollbar-thumb: var(--ui-background-low);
+
+  --ui-focus-outline: var(--ui-background-low);
+
+  --ui-input-border: var(--ui-background-low);
+  --ui-input-autofill: var(--ui-background-input);
+  --ui-input-autofill-border: var(--ui-input-border);
+  --ui-input-invalid-border: var(--ui-error);
+
+  --ui-overlay-dark: hsla(220, 5%, 100%, 0.01);
+  --ui-overlay-dark-max: hsla(220, 5%, 100%, 0.04);
+  --ui-overlay-dark-min: hsla(220, 5%, 100%, 0.05);
+
+  --ui-overlay-mid: hsla(220, 10%, 88%, 0.1);
+  --ui-overlay-mid-max: hsla(220, 10%, 88%, 0.05);
+  --ui-overlay-mid-min: hsla(220, 10%, 88%, 0.01);
+
+  --ui-overlay-light: hsla(220, 5%, 5%, 0.15);
+  --ui-overlay-light-max: hsla(220, 5%, 5%, 0.2);
+  --ui-overlay-light-min: hsla(220, 5%, 5%, 0.04);
+  --ui-overlay-sort: hsla(220, 100%, 10%, 0.02);
+
+  --ui-auth-background-image: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,15 +57,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-html, body {
+
+html,
+body {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
 }
+
 html {
   background: black;
 }
+
 #root {
   height: 100%;
   width: 100%;
@@ -34,14 +89,21 @@ code {
   border-bottom: 6px rgba(255, 255, 255, 0) solid;
   background-color: rgb(10, 10, 10);
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background: #333;
   border: 4px rgba(255, 255, 255, 0) solid;
   background-clip: padding-box;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #222;
   border: 4px rgba(255, 255, 255, 0) solid;
   background-clip: padding-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+  border: none;
 }

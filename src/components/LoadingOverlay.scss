@@ -1,0 +1,87 @@
+.loading-wrapper {
+    position: absolute;
+    background-color: var(--ui-overlay-light);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0.625rem);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+
+    &.global {
+        position: fixed;
+    }
+
+    &.hidden {
+        opacity: 0;
+    }
+
+    .loading {
+        width: 64px;
+        height: 64px;
+        background-color: var(--ui-background-body);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+
+        .spinner {
+            --spinner-size: 3;
+            --line-color: var(--ui-accent);
+            --line-alpha: 1;
+            --ring-color: var(--ui-overlay-dark-max);
+            --ring-alpha: 1;
+            --ring-size: 5;
+
+            font-size: calc(var(--spinner-size) * 1em);
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+        }
+
+        .spinner .line {
+            fill: none;
+            stroke: var(--line-color);
+            stroke-width: var(--ring-size);
+            opacity: var(--line-alpha);
+            stroke-linecap: round;
+            transform-origin: 50% 50%;
+            transform: rotate3d(0, 0, 1, 0deg);
+            animation:
+                2156ms spinner-arc ease-in-out infinite,
+                1829ms spinner-rotate linear infinite;
+        }
+
+        .spinner .ring {
+            fill: none;
+            stroke: var(--ring-color);
+            stroke-width: var(--ring-size);
+            opacity: var(--ring-alpha);
+        }
+
+        @keyframes spinner-rotate {
+            to {
+                transform: rotate3d(0, 0, 1, 360deg);
+            }
+        }
+
+        @keyframes spinner-arc {
+            from {
+                stroke-dasharray: 0 150;
+                stroke-dashoffset: 0;
+            }
+
+            to {
+                stroke-dasharray: 100 150;
+                stroke-dashoffset: -140;
+            }
+        }
+    }
+}

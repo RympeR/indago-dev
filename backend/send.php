@@ -2,6 +2,7 @@
 
 error_reporting(E_ERROR | E_PARSE);
 header('Content-Type: application/json; charset=utf-8');
+header('Access-Control-Allow-Origin: *');
 
 // Telegram API token
 $token = '6152127034:AAFgmqi2hYrVDVrMxiFoZqXr0ZCPNqs6RyY';
@@ -30,38 +31,36 @@ if ($fullName != null && $subject != null && $email != null && $message != null)
         $response = file_get_contents("https://api.telegram.org/bot$token/sendMessage?text=$preparedMessage&chat_id=$chatId&parse_mode=markdown");
 
         if ($response) {
-            http_response_code(200);
-
             echo json_encode([
                 'ok' => true,
                 'code' => 200,
             ], JSON_PRETTY_PRINT);
         } else {
-            http_response_code(500);
-
             echo json_encode([
                 'ok' => false,
                 'code' => 500,
                 'message' => 'Something went wrong...'
             ], JSON_PRETTY_PRINT);
+
+            http_response_code(500);
         }
         // If some shit happens...
     } catch (Exception $error) {
-        http_response_code(500);
-
         echo json_encode([
             'ok' => false,
             'code' => 500,
             'message' => $error->__toString()
         ], JSON_PRETTY_PRINT);
+
+        http_response_code(500);
     }
     // If user forgot to enter some data
 } else {
-    http_response_code(400);
-
     echo json_encode([
         'ok' => false,
         'code' => 400,
         'message' => 'Bad request.'
     ], JSON_PRETTY_PRINT);
+
+    http_response_code(400);
 }

@@ -5,7 +5,7 @@
     "services": "Services"
   },
   "cta": {
-    "email": "Email Us"
+    "email": "Contact us"
   },
   "landing": {
     "section1": {
@@ -23,5 +23,24 @@
       "service3": "Web scraping",
       "service4": "Data analysis and interactive dashboards"
     }
+  },
+  "validationError": {
+    "required": "Field required",
+    "invalidEmail": "E-mail is invalid"
+  },
+  "contactForm": {
+    "nameLabel": "Full name",
+    "namePlaceholder": "Your full name",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Your E-mail",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Message subject",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your message",
+    "messageSendedSuccessfuly": "Your message has been sent successfully. We will contact you shortly!",
+    "messageSendedWithError": "Sorry, an error has occurred. Please try again later."
+  },
+  "common": {
+    "submit": "Submit"
   }
 }

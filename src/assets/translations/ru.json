@@ -5,7 +5,7 @@
     "services": "Услуги"
   },
   "cta": {
-    "email": "Написать на почту"
+    "email": "Связаться с нами"
   },
   "landing": {
     "section1": {
@@ -23,5 +23,24 @@
       "service3": "Веб скраппинг",
       "service4": "Анализ данных и построение интерактивных дашбордов"
     }
+  },
+  "validationError": {
+    "required": "Поле обязательно",
+    "invalidEmail": "Неверный адрес электронной почты"
+  },
+  "contactForm": {
+    "nameLabel": "Полное имя",
+    "namePlaceholder": "Ваше полное имя",
+    "emailLabel": "Электронная почта",
+    "emailPlaceholder": "Ваш электронный адрес",
+    "subjectLabel": "Тема",
+    "subjectPlaceholder": "Тема сообщения",
+    "messageLabel": "Сообщение",
+    "messagePlaceholder": "Ваше сообщение",
+    "messageSendedSuccessfuly": "Ваше ообщение было отправлено успешно. В ближайшее время мы свяжемся с Вами!",
+    "messageSendedWithError": "Извините, произошла ошибка. Пожалуйста, попробуйте еще раз позже."
+  },
+  "common": {
+    "submit": "Отправить"
   }
 }

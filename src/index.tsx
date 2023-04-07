@@ -1,22 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import Landing from "./Landing";
-import reportWebVitals from "./reportWebVitals";
-import { WindowSizeObserverProvider } from "./tools/WindowSize";
-import { I18nextProvider } from "react-i18next";
-import i18next, { InitOptions } from "i18next";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Landing from './Landing';
+import reportWebVitals from './reportWebVitals';
+import { WindowSizeObserverProvider } from './tools/WindowSize';
+import { I18nextProvider } from 'react-i18next';
+import i18next, { InitOptions } from 'i18next';
 
-import translationEN from "./assets/translations/en.json";
-import translationUA from "./assets/translations/ua.json";
-import translationRU from "./assets/translations/ru.json";
-import translationDE from "./assets/translations/de.json";
+import translationEN from './assets/translations/en.json';
+import translationUA from './assets/translations/ua.json';
+import translationRU from './assets/translations/ru.json';
+import translationDE from './assets/translations/de.json';
+import { Toaster } from 'react-hot-toast';
 
 i18next.init({
-  lng: navigator.language.slice(0, 2) ?? "en",
+  lng: navigator.language.slice(0, 2) ?? 'en',
   interpolation: {
-    prefix: "{",
-    suffix: "}",
+    prefix: '{',
+    suffix: '}',
   },
   resources: {
     en: {
@@ -39,11 +40,15 @@ ReactDOM.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
       <WindowSizeObserverProvider>
+        <Toaster  toastOptions={{style: {
+          background: 'var(--ui-background-body)',
+          color: 'var(--ui-text)'
+        }}} />
         <Landing />
       </WindowSizeObserverProvider>
     </I18nextProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -23,5 +23,24 @@
       "service3": "Web Scraping",
       "service4": "Datenanalyse und interaktive Dashboards"
     }
+  },
+  "validationError": {
+    "required": "Feld erforderlich",
+    "invalidEmail": "E-Mail ist ungültig"
+  },
+  "contactForm": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Ihr Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "Ihre E-Mail",
+    "subjectLabel": "Betreff",
+    "subjectPlaceholder": "Betreff der Nachricht",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Ihre Nachricht",
+    "messageSendedSuccessfuly": "Ihre Nachricht wurde erfolgreich gesendet. In Kürze werden wir uns mit Ihnen in Verbindung setzen!",
+    "messageSendedWithError": "Es tut uns leid, es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+  },
+  "common": {
+    "submit": "Absenden"
   }
 }
