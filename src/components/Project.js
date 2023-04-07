@@ -1,11 +1,11 @@
-import './Artist.css';
+import './Project.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
-function Project({Title, Image, ListenLink}) {
+function Project({Title, Image, Link}) {
   return (
-    <a rel="noreferrer" target="_blank" href={ListenLink} className="artist-wrapper">
-        <div className="artist">
+    <a rel="noreferrer" target="_blank" href={Link} className="project-wrapper">
+        <div className="project">
             <div className="poster-wrapper">
                 <LazyLoadImage
                 alt=""

@@ -3,23 +3,24 @@
     color: inherit;
 }
 .product {
+    width: 300px;
     box-sizing: border-box;
-    height: auto;
+    height: 370px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.08);
     margin: 20px;
     padding: 20px;
     cursor: pointer;
     transition: all 0.2s ease;
     border: 3px solid transparent;
     text-align: center;
+    border-color: rgba(255, 255, 255, 0.05);
 }
 .product:hover {
     border-color: rgba(255, 255, 255, 0.116);
 }
 .product .image-wrapper {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;

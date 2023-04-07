@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "services": "Dienstleistungen"
+  },
+  "cta": {
+    "email": "Kontaktieren Sie uns"
+  },
+  "landing": {
+    "section1": {
+      "text1": "Indago Dev: wir sind ein Entwicklungsdienstleister, der sich der personalisierten Serviceleistung, außergewöhnlicher Qualität und dauerhaften Partnerschaften verschrieben hat. Schließen Sie sich uns an und gestalten Sie die Zukunft mit.",
+      "cta": "Mehr erfahren"
+    },
+    "section2": {
+      "heading": "Unsere Projekte",
+      "project1": "Kinder der Zukunft"
+    },
+    "section3": {
+      "heading": "Unsere Dienstleistungen",
+      "service1": "Produktdesign",
+      "service2": "Produktentwicklung",
+      "service3": "Web Scraping",
+      "service4": "Datenanalyse und interaktive Dashboards"
+    }
+  }
+}

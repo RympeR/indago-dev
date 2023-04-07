@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services"
+  },
+  "cta": {
+    "email": "Email Us"
+  },
+  "landing": {
+    "section1": {
+      "text1": "Indago Dev: A full-cycle development firm committed to personalized service, exceptional quality, and lasting partnerships. Join us in creating the future.",
+      "cta": "Learn more"
+    },
+    "section2": {
+      "heading": "Our projects",
+      "project1": "Kids of the future"
+    },
+    "section3": {
+      "heading": "Our services",
+      "service1": "Product design",
+      "service2": "Product development",
+      "service3": "Web scraping",
+      "service4": "Data analysis and interactive dashboards"
+    }
+  }
+}
