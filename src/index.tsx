@@ -12,9 +12,10 @@ import translationUA from './assets/translations/ua.json';
 import translationRU from './assets/translations/ru.json';
 import translationDE from './assets/translations/de.json';
 import { Toaster } from 'react-hot-toast';
+import { ClientTools } from './tools/ClientTools';
 
 i18next.init({
-  lng: navigator.language.slice(0, 2) ?? 'en',
+  lng: ClientTools.getPrefferedLanguage(),
   interpolation: {
     prefix: '{',
     suffix: '}',
@@ -40,10 +41,14 @@ ReactDOM.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
       <WindowSizeObserverProvider>
-        <Toaster  toastOptions={{style: {
-          background: 'var(--ui-background-body)',
-          color: 'var(--ui-text)'
-        }}} />
+        <Toaster
+          toastOptions={{
+            style: {
+              background: 'var(--ui-background-body)',
+              color: 'var(--ui-text)',
+            },
+          }}
+        />
         <Landing />
       </WindowSizeObserverProvider>
     </I18nextProvider>

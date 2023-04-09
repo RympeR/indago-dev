@@ -5,10 +5,6 @@
     }
 }
 @media (orientation: portrait) {
-    .projects, .products {
-        width: 100%;
-        justify-content: left;
-    }
     .landing .slide {
         min-height: calc(100% - 50px);
     }

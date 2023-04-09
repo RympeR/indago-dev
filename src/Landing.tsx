@@ -40,8 +40,10 @@ import { IContactForm } from './interfaces/IContactForm';
 import { LoadingOverlay } from './components/LoadingOverlay';
 import { ValidationTools } from './tools/ValidationTools';
 import { AsyncForm } from './components/AsyncForm';
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 import { toast } from 'react-hot-toast';
+import LanguageChange from './components/LanguageChange';
+import { ClientTools } from './tools/ClientTools';
 
 function Landing() {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
@@ -179,12 +181,17 @@ function Landing() {
         >
           {t('nav.services')}
         </Link>
-        <div
-          className='action-button'
-          role='button'
-          onClick={() => setContactFormVisible(true)}
-        >
-          {t('cta.email')}
+        <div className='right-side'>
+          <Button
+            className='action-button'
+            onClick={() => setContactFormVisible(true)}
+          >
+            {t('cta.email')}
+          </Button>
+          <LanguageChange
+            onChange={(lang: string) => ClientTools.setQueryParam('lang', lang)}
+            language={ClientTools.getPrefferedLanguage()}
+          />
         </div>
       </header>
 
@@ -216,7 +223,11 @@ function Landing() {
           <div>
             <img className='logo' alt='IndagoDev logo' src={Logo} />
             <p>{t('landing.section1.text1')}</p>
-            <Button onClick={() => setContactFormVisible(true)} icon='headset' text={t('cta.email') ?? ''} />
+            <Button
+              onClick={() => setContactFormVisible(true)}
+              icon='headset'
+              text={t('cta.email') ?? ''}
+            />
             <Link to='slide-2' offset={-50} smooth={true} duration={1500}>
               <div className='call-to-scroll-label'>
                 <img alt='Arrow down' src={ArrowDown} />
